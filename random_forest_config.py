@@ -5,9 +5,9 @@
 __config_values = {
     "name": "random_forest",
     "load_first": False,
-    "shorten": True,
+    "shorten": False,
     "normalize": True,
-    "new_arguments": True,
+    "new_arguments": False,
     "save": False,
     "cross_validate": False
 }

@@ -26,5 +26,5 @@ python3.7 -m venv ./venv
 
 Now you can specify behaviour in every config and run each model by calling for instance:
 ```
-./venv/bin/python3.7 ./ensemble.py
+./venv/bin/python3.7 ./decision_tree.py
 ```

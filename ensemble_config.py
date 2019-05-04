@@ -1,8 +1,8 @@
 __config_values = {
     "name": "ensemble_classifier",
-    "shorten": True,
+    "shorten": False,
     "normalize": True,
-    "new_arguments": True,
+    "new_arguments": False,
     "cross_validate": True,
     "voting": "soft"
 }
