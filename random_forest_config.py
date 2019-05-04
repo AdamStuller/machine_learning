@@ -9,5 +9,5 @@ __config_values = {
     "normalize": True,
     "new_arguments": True,
     "save": False,
-    "cross_validate": True
+    "cross_validate": False
 }

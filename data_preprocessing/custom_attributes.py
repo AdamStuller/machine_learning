@@ -1,4 +1,10 @@
 def get_number_of_non_zero_right(dataset):
+    """
+    Counts number of all pixels whose value is above 100 and are in right half of image
+    :param dataset: Dataframe on which calculation is dne
+    :return: int
+        Number of those pixels
+    """
     x = dataset.iloc[:, 1:785].values
 
     import numpy as np
@@ -15,6 +21,12 @@ def get_number_of_non_zero_right(dataset):
 
 
 def get_number_of_non_zero_left(dataset):
+    """
+    Counts number of all pixels whose value is above 100 and are in left half of image
+    :param dataset: Dataframe on which calculation is dne
+    :return: int
+            Number of those pixels
+    """
     x = dataset.iloc[:, 1:785].values
 
     import numpy as np
@@ -31,6 +43,12 @@ def get_number_of_non_zero_left(dataset):
 
 
 def get_number_of_non_zero_down(dataset):
+    """
+    Counts number of all pixels whose value is above 100 and are in lower half of image
+    :param dataset: Dataframe on which calculation is dne
+    :return: int
+        Number of those pixels
+    """
     x = dataset.iloc[:, 1:785].values
 
     import numpy as np
@@ -47,6 +65,12 @@ def get_number_of_non_zero_down(dataset):
 
 
 def get_number_of_non_zero_up(dataset):
+    """
+    Counts number of all pixels whose value is above 100 and are in upper half of image
+    :param dataset: Dataframe on which calculation is dne
+    :return: int
+        Number of those pixels
+    """
     x = dataset.iloc[:, 1:785].values
 
     import numpy as np

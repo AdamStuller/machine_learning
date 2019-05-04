@@ -7,7 +7,7 @@ __config_values = {
     "load_first": False,
     "shorten": True,
     "normalize": True,
-    "new_arguments": False,
+    "new_arguments": True,
     "save": False,
     "cross_validate": True
 }

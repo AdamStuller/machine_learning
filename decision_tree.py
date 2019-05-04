@@ -1,4 +1,9 @@
 def get_importance(clf, title):
+    """
+    returns list of importances for individual pixels
+    :param clf: classifier, whose importances to return
+    :param title: title of graph
+    """
     importances = clf.feature_importances_.reshape(28,28)
 
     import matplotlib.pyplot as plt
@@ -49,7 +54,7 @@ def main():
 
     if config["cross_validate"]:
         print('Crossvalidating....')
-        mean = cross_validate(clf, x_test, y_test)
+        mean = cross_validate(clf, x_train, y_train)
         print('Cross validation mean: ' + str(mean))
 
     if config["save"]:

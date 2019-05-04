@@ -1,4 +1,10 @@
 def visualize_error_rate(clf, x_test, y_test):
+    """
+    Visualizes error rate of given classifier
+    :param clf: classifier
+    :param x_test: test dataset
+    :param y_test: labels of test data set
+    """
     import pandas as pd
     df_labels = pd.DataFrame()
     df_labels["labels"] = y_test
@@ -63,6 +69,7 @@ def main():
         clf = train(classifier, x_train, y_train)
 
     matrix, score, err_rate = test(clf, x_test, y_test)
+    matrix
     print("Confusion Matrix: ")
     print(matrix)
     print("Score: " + str(score))

@@ -5,9 +5,9 @@
 __config_values = {
     "name": "mlp_classifier",
     "load_first": False,
-    "shorten": False,
+    "shorten": True,
     "normalize": True,
-    "new_arguments": False,
+    "new_arguments": True,
     "save": False,
-    "cross_validate": True
+    "cross_validate": False
 }

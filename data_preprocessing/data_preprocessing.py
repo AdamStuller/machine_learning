@@ -1,4 +1,12 @@
 def get_mnist_data(shorten=False, normalize=True, new_arguments=False):
+    """
+    Reads dataset from file in ./data/datasets folder and commits specified operations on it
+    :param shorten: determines wheter or not to shorten the dataset
+    :param normalize:  determines whwter or not to normalize it
+    :param new_arguments: determines wheter to add new arguments
+    :return: pandas.DataFrame
+        updated dataset
+    """
     import pandas as pd
     import numpy as np
     import os
@@ -40,10 +48,5 @@ def get_mnist_data(shorten=False, normalize=True, new_arguments=False):
 
     return x_train, x_test, y_train, y_test
 
-
-def show_histogram(labels):
-    import matplotlib.pyplot as plt
-    plt.hist(labels, bins=10)
-    plt.show()
 
 
